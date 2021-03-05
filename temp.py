@@ -1,5 +1,12 @@
 import pandas as pd
 
+def multiplyList(myList):
+    # Multiply elements one by one
+    result = 1
+    for x in myList:
+        result = result * x
+    return result
+
 df = pd.read_excel("C:/Users/kjs01/AT/Bitcoin/2018_01.xlsx")
 # start=500000
 num_index = len(df.index)
@@ -10,7 +17,7 @@ win=0
 buy_commission=0
 sell_commission = 0
 for i in range(9, num_index-1):
-    date = df.iloc[i, 0]legendary-octo-brocco
+    date = df.iloc[i, 0]
     op_a = df.iloc[i, 1]  # op 는 시작 가격
     tp_a = df.iloc[i, 2]  # tp 는 종가
     hp_a = df.iloc[i, 3]  # hp 는 고가

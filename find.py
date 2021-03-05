@@ -1,5 +1,12 @@
 import pandas as pd
 
+def multiplyList(myList):
+    # Multiply elements one by one
+    result = 1
+    for x in myList:
+        result = result * x
+    return result
+
 yr=['2018','2019','2020']
 month=['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
 
