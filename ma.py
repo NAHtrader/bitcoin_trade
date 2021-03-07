@@ -14,7 +14,6 @@ for y in yr:
             tp = df.iloc[i, 2]  # tp 는 종가
             hp = df.iloc[i, 3]  # hp 는 고가
             lp = df.iloc[i, 4]  # lp 는 저가
-            ma_6 = df['Trade Price'].rolling(6).mean()
             tradedata[timedata] = [op, tp, hp, lp, ma_6]
 
         tradedata = pd.DataFrame(tradedata)
